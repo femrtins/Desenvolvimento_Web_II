@@ -1,0 +1,105 @@
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+*{
+    font-family: "Questrial", sans-serif;
+font-weight: 400;
+font-style: normal;
+    
+}
+
+.main {
+    background-color: #ce95b8;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+
+}
+.central {
+    height: 200px;
+    width: 800px;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    
+    
+}
+
+.form, button{
+    font-size: 20px;
+}
+
+.form {
+    height: 50px;
+    width: 400px;
+    border-radius: 30px;
+    border: 1px solid white ;
+    background-color: #ce95b8;
+    color: aliceblue;
+    transition: 0.5s;
+    padding-left: 20px;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+button{
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    border: 1px solid white ;
+    background-color: #ce95b8;
+    color: aliceblue;
+}
+button:hover{
+    background-color: aliceblue;
+    color: #ce95b8;
+}
+
+#nao{
+    animation: rotate-top 1s  infinite ;
+    width: 50px;
+    position: relative;
+
+}
+
+
+@keyframes rotate-top {
+    0% {
+        transform: translate(0, 0%);
+        transform-origin: top center; /* Define o ponto de origem da transformação */
+    }
+    25% {
+        transform: translate(500px, -500%);
+        
+
+    
+    }
+    50% {
+        transform: translate(-600px, -200%);
+        
+
+    
+    }
+    75%{
+        transform: translate(-400px, 500%);
+
+    }
+    100%{
+        transform: translate(0, 0%);
+    
+
+    }
+
+
+
+    
+  
+}
