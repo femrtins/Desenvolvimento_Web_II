@@ -18,12 +18,12 @@ Home
             </tr>
         </thead>
         <tbody>
-            {% for item in itens %}
+            {%for p in pessoas%}
             <tr>
-                <td>{{item.id}}</td>
-                <td>{{item.nome}}</td>
-                <td>{{item.cod_barra}}</td>
-                <td>{{item.preco}}</td>
+                <td>{{p.id}}</td>
+                <td>{{p.nome}}</td>
+                <td>{{p.email}}</td>
+                <td>{{p.senha}}</td>
             </tr>
             {% endfor %}
         </tbody>

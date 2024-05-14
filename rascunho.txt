@@ -1,0 +1,29 @@
+Recomendação de lugares
+
+- pessoa escolhe a localização
+- lista de lugares de acordo com a localização (com filtro): mapa ou lista
+
+- cadastro de pessoa: opção de cadastro de lugares ou avaliação
+
+ filtros:
+ - eventos
+ - lugares
+ - proximidade
+ - categorias
+ - preço
+
+
+recomendação de livros
+
+- cadastro de pessoa - para fazer recomendações
+
+- busca pela pessoa cadastrada e recomendações dos livros
+
+- perfil da pessoa: dados da pessoas e atualizações recentes
+
+paginas
+- página principal
+- página de recomendação
+- página de cadastro
+- página do perfil
+- página de busca

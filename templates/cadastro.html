@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+
+{% block titulo %}
+Cadastro
+{% endblock %}
+
+{% block conteudo %}
+
+<div id="cadastro">
+    <h2>Cadastro</h2>
+
+
+    <form action="/enviar" method="post">
+        <div>
+            <label for="nome" >Seu nome</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div>
+            <label for="email" >E-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="senha" >Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Pelo menos 6 caracteres">
+        </div>
+        <div>
+            <label for="senha_comparacao">Insira a senha mais uma vez</label>
+            <input type="password" name="senha_comparacao" id="senha_comparacao">
+        </div>
+        <div>
+            <input type="submit" value="Continue">
+        </div>
+    </form>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="notification is-danger">
+            {{ messages[0] }}. Go to <a href="{{ url_for('page_cadastro') }}">login page</a>.
+        </div>
+    {% endif %}
+    {% endwith %}
+
+    <p>Você já tem uma conta? Faça o login</p>
+</div>
+
+{% endblock %}
