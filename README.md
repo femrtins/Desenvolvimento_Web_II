@@ -1,6 +1,6 @@
-recomendação de livros
+# recomendação de livros
 
-paginas
+## paginas
 - [ ] página principal
   - [ ] fazer o input da recomendação enviar a recomendação pro BD
   - [ ] deve ser necessário a pessoa estar cadastrada para pedir a recomendação
@@ -13,10 +13,17 @@ paginas
   * [ ] deve ter todas as recomendações que o usuário deu e as recomendações que ele pediu
   * [ ] ter as avaliações do livros ?
 - [ ] página de busca
-  * [ ] a busca deve retornar todoas as recomendaações que tiverem as palavras escritas na busca
+  * [ ] a busca deve retornar todoas as recomendaações que tiverem as palavras escritas na busca, busca pela pessoa cadastrada e recomendações dos livros
 
+## linux:
 
-  
-- busca pela pessoa cadastrada e recomendações dos livros
+- '''pip3 install virtualenv'''
+- '''virtualenv nome_do_projeto '''
+- '''cd nome_do_projeto'''
 
-- perfil da pessoa: dados da pessoas e atualizações recentes
+- para ativar: '''source bin/activate'''
+- para desativar: '''deactivate'''
+
+- '''pip3 install flask'''
+
+- live: '''flask --app app run --debug''' 
