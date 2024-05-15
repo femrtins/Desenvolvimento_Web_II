@@ -21,7 +21,7 @@
 - '''virtualenv nome_do_projeto '''
 - '''cd nome_do_projeto'''
 
-- para ativar: '''source bin/activate'''
+- para ativar: '''source venv/bin/activate'''
 - para desativar: '''deactivate'''
 
 - '''pip3 install flask'''

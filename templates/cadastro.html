@@ -8,39 +8,40 @@ Cadastro
 {% block conteudo %}
 
 <div id="cadastro">
-    <h2>Cadastro</h2>
-
-
+    <h2 id="titulo-cadastro">Cadastro</h2>
+    {% with messages = get_flashed_messages() %}
+   
     <form action="/enviar" method="post">
         <div>
             <label for="nome" >Seu nome</label>
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="nome" id="nome" class="input-enviar">
         </div>
         <div>
             <label for="email" >E-mail</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" class="input-enviar">
         </div>
+        
         <div>
             <label for="senha" >Senha</label>
-            <input type="password" name="senha" id="senha" placeholder="Pelo menos 6 caracteres">
+            <input type="password" name="senha" id="senha" placeholder="Pelo menos 6 caracteres" class="input-enviar">
         </div>
         <div>
             <label for="senha_comparacao">Insira a senha mais uma vez</label>
-            <input type="password" name="senha_comparacao" id="senha_comparacao">
+            <input type="password" name="senha_comparacao" id="senha_comparacao" class="input-enviar">
         </div>
-        <div>
-            <input type="submit" value="Continue">
+        {% if messages %}
+        <div class="mensagem-erro">
+            <img id="atencao" src="{{ url_for('static',filename='img/atencao.png') }}">{{ messages[0] }}.
+        </div>
+        {% endif %}
+        <div class="botao-enviar-div">
+            <input type="submit" value="Continue" class="botao-enviar">
         </div>
     </form>
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-        <div class="notification is-danger">
-            {{ messages[0] }}. Go to <a href="{{ url_for('page_cadastro') }}">login page</a>.
-        </div>
-    {% endif %}
+    
     {% endwith %}
 
-    <p>Você já tem uma conta? Faça o login</p>
+    <p>Você já tem uma conta? <a href="{{ url_for('page_login') }}" class="link">Faça o login</a></p>
 </div>
 
 {% endblock %}
