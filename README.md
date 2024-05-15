@@ -17,13 +17,13 @@
 
 ## linux:
 
-- '''pip3 install virtualenv'''
-- '''virtualenv nome_do_projeto '''
-- '''cd nome_do_projeto'''
+- ```pip3 install virtualenv```
+- ```virtualenv nome_do_projeto ```
+- ```cd nome_do_projeto```
 
-- para ativar: '''source venv/bin/activate'''
-- para desativar: '''deactivate'''
+- para ativar: ```source venv/bin/activate```
+- para desativar: ```deactivate```
 
-- '''pip3 install flask'''
+- ```pip3 install flask```
 
-- live: '''flask --app app run --debug''' 
+- live: ```flask --app app run --debug``` 
